@@ -1,0 +1,19 @@
+{
+    "name": "mniziolek/preorder",
+    "description": "Preoreder offline payment",
+    "require": {
+        "magento/module-payment": "*.*",
+        "magento/module-checkout": "*.*",
+        "magento/module-sales": "*.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Mniziolek\\Preorder\\": ""
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Mniziolek Team
+ * @copyright Copyright (c) Mniziolek (https://github.com/niziou/)
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.addtocart">
+            <block class="Mniziolek\Preorder\Block\Product\View\Preorder" name="product.info.preorder" template="Mniziolek_Preorder::product/view/preorder.phtml">
+                <block class="Vipps\Payment\Block\Express\Button" name="product.info.preorder.button">
+                    <arguments>
+                        <argument name="is_in_catalog_product" xsi:type="boolean">true</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceBlock>
+    </body>
+</page>

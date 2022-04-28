@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Mniziolek Team
+ * @copyright Copyright (c) Mniziolek (https://github.com/niziou/)
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <Mniziolek_preorder>
+            <general>
+                <status>1</status>
+            </general>
+        </Mniziolek_preorder>
+        <payment>
+            <preorder>
+                <active>1</active>
+                <model>Mniziolek\Preorder\Model\Payment\Method\Preorder</model>
+                <allowspecific>0</allowspecific>
+                <title>Preorder</title>
+                <can_review_payment>1</can_review_payment>
+                <can_deny_payment>1</can_deny_payment>
+                <order_status>preorder_review</order_status>
+                <group>Offline</group>
+            </preorder>
+        </payment>
+    </default>
+</config>
